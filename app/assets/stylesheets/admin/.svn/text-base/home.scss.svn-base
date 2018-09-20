@@ -1,0 +1,23 @@
+.adminPageContainer
+{
+	float:left;width:100%;
+	
+	.admin-pannel-item
+	{
+		float:left; width:95%;background:#FFF; cursor:pointer;
+		padding:20px 0 20px 0; margin-bottom:10px; border:1px solid #e1e6f1;
+		
+		.module-logo
+		{
+			float:left; width: 100%; text-align:center; 
+			
+			img{width:32px; height:32px;}
+			
+			
+		}
+		.module-name{float:left; width: 100%; text-align:center;margin-top:10px;}
+		
+		&:hover{ .module-logo { img{width:40px; height:40px; margin-top:-8px;} } }
+		
+	}/*admin-pannel-item*/
+}

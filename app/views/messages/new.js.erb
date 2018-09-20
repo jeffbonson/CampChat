@@ -1,0 +1,8 @@
+$("content").html("<%= escape_javascript(render partial: "messages/new") %>")
+$(".userWrapperRow").removeClass("userSelected")
+$("#user_list_selected_<%=params[:user_id]%>").addClass("userSelected")
+close_nav_frame();
+
+$(".nav_menu_logo_frame").html("<%=@user.email%>")
+
+$(".chat_room").height(window.height())

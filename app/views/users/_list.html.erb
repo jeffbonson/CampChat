@@ -1,0 +1,36 @@
+<div class="nav_frame" data-menu="close">
+	<div class="logo_container">
+		<div>
+			Search...
+		</div>
+	</div>
+	
+	<div class="nav_items">
+		<div class="users_list_wrapper">
+			<%@users.each do |u|%>
+				<%=link_to new_message_url(:user_id => u.id),:remote=>true do%>
+					<div class="userWrapperRow" id="user_list_selected_<%=u.id%>">
+						<div class="userImage"><%=image_tag('logo.png')%></div>
+						<div class="userName">
+							<%if u.email.size > 25%>
+								<%=u.email[0..22]%>...
+							<%else%>
+								<%=u.email%>
+							<%end%>
+						</div>
+					</div>
+				<%end%>
+			<%end%>
+			
+			
+			<%= link_to destroy_user_session_path, method: :delete, :class => 'navbar-link'  do%>
+			<div class="userWrapperRow">
+				<div class="userImage">&nbsp;</div>
+				<div class="userName">Logout</div>
+			</div>
+			<%end%>
+			</div>
+		</div>
+		
+	</div>
+</div>

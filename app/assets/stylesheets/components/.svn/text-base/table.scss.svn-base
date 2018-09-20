@@ -1,0 +1,51 @@
+.list
+{
+	width: 100%; border-collapse:collapse;
+	
+	.dummy-content{background : #E6ECEF; min-height:15px;border-radius:10px; float:left; width:100%;}
+	.dummy-content-small{background : #E6ECEF; min-height:15px;border-radius:10px; float:left; width:60%;}
+	
+	tr
+	{
+		th
+		{
+			padding:20px; border-bottom :2px solid gray; text-align:left; border-top :0px solid lightgray;
+		}
+		
+		td
+		{
+			padding:20px;  border-bottom :1px solid lightgray; color:#1c252c;
+			
+		}
+		
+		
+		
+		
+	}
+	tr.selected_gold_rate{background:#4c614c;
+		td{color:#FFF;
+			a{color:#FFF;}
+		}
+	}
+}
+
+.database
+{
+	width: 100%; border-collapse:collapse; border:1px solid lightgray;
+	
+	tr
+	{
+		th
+		{
+			padding:5px; border-bottom :2px solid gray; text-align:left; border-top :1px solid lightgray;
+			background:lightgray;
+		}
+		
+		td
+		{
+			padding:5px;  border :1px solid lightgray; color:#1c252c;background:#FFF;
+		}
+	}
+}
+
+

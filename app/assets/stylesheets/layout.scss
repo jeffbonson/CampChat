@@ -1,0 +1,148 @@
+@import 'components/attributes';
+@import 'components/fonts';
+
+.nav_menu_frame
+{
+	
+    background: $nav-menu-background;
+    
+    font-family:inherit !important;
+    transition: all 0.2s;
+    
+   
+}/*nav_frame*/
+
+
+.nav_page_frame
+{
+	float:right;
+    height:100%;
+    border:0px solid lightgray;
+    overflow-x:hidden;
+    transition: all 0.2s;
+    padding-bottom:30px;
+    
+    header
+    {
+    	@include fl-wh;
+    	border-bottom:1px solid $nav-border;
+    	display:none;
+    	transition: all 0.2s;
+    	
+    }/*header*/
+    
+    .page_frame
+    {
+    	float:left;width: 100%; overflow:hidden; height:100%;
+    	transition: all 0.2s;
+    }
+    
+}/*nav_page_frame*/
+
+
+.notification_wrapper
+{
+	float:left;width:100%; margin-bottom:10px;
+	
+	.notification
+	{
+		float:left;width:100%;
+		
+		.notify-danger
+		{
+			background: #fbeaea;color: #c22929;border-radius: 4px;display: table; width:99.6%;overflow:hidden;
+			border: 2px solid #f5d1d1;
+			.notify-icon{background: #d74242;color:#FFF;}
+		}
+		
+		.notify-success
+		{
+			background: #d6efd6;color:green;border-radius: 4px;display: table; width:99.7%;overflow:hidden;
+			border: 1px solid green;
+			.notify-icon{background:  #26B35C;color:green;}
+		}
+		
+		.notify-information
+		{
+			background: #e0f2fb; color:#125c81; border-radius: 4px;display: table; width:99.6%;overflow:hidden;
+			border:1px solid #b2c2cd;
+			.notify-icon{background:  #e0f2fb;color: #125c81;}
+		}
+		
+		.notification-comments{float:left;width:100%; margin:0px 0 10px 0;}	
+			
+		
+		
+		.notify-ok-buttons
+			{
+				float:left; margin-right:5px;
+				@include button-attribtes;
+			}
+			
+			.notify-cancel-buttons
+			{
+				float:left; margin-right:5px; width: auto;
+				@include cancel-button-attributes;
+			}
+		
+		.notify-icon
+		{
+			width:20%;text-align:center;  font-size:25px;
+		    display: table-cell;vertical-align: middle;position: relative;
+    	}
+    	
+    	.notify-content{width:80%; padding:10px;}
+    	
+    	.notify-title{font-weight:bold;width:100%;float:left;margin:10px 0 10px 0;
+    		span{margin-right:10px;}
+    	}
+    	
+    	.notify-message{width:100%;float:left;margin:0px 0 10px 0px;}
+	}
+	
+}
+
+.todays_gold_rate_corner
+	{
+		position:fixed; background: #000; right:0;top:0; height:45px; width: 45px;
+		border-radius: 0% 0% 0% 100%; cursor:pointer;
+		padding:20px;transition: all 0.3s;    z-index: 100;
+		
+		span
+		{
+			text-align:center;position:fixed; font-size:10px; 
+			color :orange;width:63; top:20px; right:7px;transition: all 0.3s;
+		}
+		
+		&:hover
+		{
+			width:150px;height:150px;transition: all 0.3s; 
+			border-left:5px solid #FFF; 
+			border-bottom:5px solid #FFF;
+			
+			span
+			{
+				font-size:20px; right:20px; top:40px;transition: all 0.3s; 
+				div{margin-bottom:10px;}
+			}
+		}
+		
+	}
+	
+.inAdminGoldRate
+	{
+			width:150px;height:150px;transition: all 0.3s; 
+			border-left:5px solid #FFF; 
+			border-bottom:5px solid #FFF;
+			
+			span
+			{
+				font-size:20px; right:20px; top:40px;
+				div{margin-bottom:10px;}
+			}
+	}
+
+.custom_date_wrapper
+{
+	float:left;width:100%;padding:5px 0 5px 0; font-size:12px;
+}

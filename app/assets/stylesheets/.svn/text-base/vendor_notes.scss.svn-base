@@ -1,0 +1,96 @@
+.business_entity_notes
+{
+	float:left; width:101%; background:#D7E7F3;margin:0px 0 10px -5px;
+	
+	.notes_compose
+	{
+		float:left;width:96%; background:#FFF; margin-left: 2%;
+    	margin-top: 15px;
+		
+		
+   
+		
+		.inputBoxNote
+		{
+			float:left;width:81%;border:0px solid red;
+			input
+			{
+				border:0px !important;margin-left: 2px;margin-top:3px;width:99% !important;    height: 26px;
+			
+				&:focus
+			    {
+			    	border:0px solid red !important;
+					outline: none  !important;
+					box-shadow: 0 0 0px 0  !important;
+					box-shadow: 0 0 0 0px 0  !important;
+			   	}
+			}
+		}
+		
+		.post_comment{background:#3D6077; float:right;padding:20px;color:#FFF; cursor:pointer;}
+	}
+	
+	.notes_list{float:left;width:98%;max-height: 247px;overflow: auto;transition: all 0.2s;margin-top:10px; padding-bottom:10px;
+}
+	
+	.notes_row
+	{
+		width:96%; font-size:13px; margin-left:2%;
+		
+		.user{float:left;width:12%;border:0px solid red;padding:10px; padding-left:0;
+			
+		}
+		
+		.duration{width:29%;border:0px solid red;padding:10px; }
+		
+		.content{
+					width:42%;border:0px solid red;
+					border:1px red;padding:10px; border-radius:20px;
+				}
+		
+	}
+	
+	.sent{float:left;
+		.user{float:left;}
+		
+		.content{float:right;text-align:left; }
+		.duration{float:left;text-align:left; }
+	}
+	
+	.error_note{float:left;width:100%; padding:10px;background:#ca5a5a; color:#FFF;display:none;
+		span{margin-right:5px; color:#FFF;}
+	}
+	
+	.dummy_note{height:15px; width:80%; background:#acaaaa; border-radius:20px;float:left;}
+	
+	.note_added{}
+	
+	 .note_added {
+      animation: colorchange 2s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 2s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #99d999;}
+      25%  {background: #99bcbc;}
+      50%  {background: #99cdd9;}
+      75%  {background: #b4c8c8;}
+      100% {background: #DCE8F5;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+       0%   {background: #99d999;}
+      25%  {background: #99bcbc;}
+      50%  {background: #99cdd9;}
+      75%  {background: #b4c8c8;}
+      100% {background: #DCE8F5;}
+    }
+	
+	
+	
+}
+
+

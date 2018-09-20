@@ -1,0 +1,134 @@
+.progress-container {
+      float:left; width:100%;
+  }
+  .progressbar {
+      counter-reset: step;
+  }
+  .progressbar li {
+      list-style-type: none;
+      width: 25%;
+      float: left;
+      font-size: 12px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      color: #7d7d7d;
+  }
+  .progressbar li:before {
+      width: 30px;
+      height: 30px;
+      content: counter(step);
+      counter-increment: step;
+      line-height: 30px;
+      border: 2px solid #7d7d7d;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background-color: white;
+  }
+  .progressbar li:after {
+      width: 100%;
+      height: 2px;
+      content: '';
+      position: absolute;
+      background-color: #7d7d7d;
+      top: 15px;
+      left: -50%;
+      z-index: -1;
+  }
+  
+  
+  .progressbar li:first-child:after {
+      content: none;
+  }
+  .progressbar li.active {
+      color: green;
+  }
+  .progressbar li.active:before {
+      border-color: #55b776;
+  }
+  .progressbar li.active + li:after {
+      background-color: #55b776;
+  }
+  
+
+
+.transaction_icon{font-size: 25px !important;
+    border-radius: 50%;
+    background: #0c274f;
+    color: #FFF;
+    padding: 20px;
+	margin-right: 15px;
+	}
+	
+.transaction_icon_shadow{box-shadow: 1px 1px 5px lightgrey;
+    margin-bottom: 5px;}
+	
+.transaction_gold_rate{font-size:12px; color:gray;}
+
+
+.preview_action_wrapper
+{
+	float:left;width:95%;float:left;margin-left:3%;margin-bottom:10px;
+	
+	.send_email_wrapper
+	{
+		float:left;
+		
+		.send_email_input_wrapper
+		{
+			float:left;
+			
+			input{}
+		}
+		
+		
+	}
+	.download_pdf_wrapper{float:left;}
+}
+
+@keyframes sendinemail {
+	    from {top: 0px;}
+	    to {color: #029eb6;}
+	}
+	
+.sending_invoice_email{
+	display:none;
+	background:#FFF;
+	border:0;
+	font-size: 32px;
+    padding: 5px;
+	animation: sendinemail 0.5s;
+	animation-iteration-count: infinite;
+}
+
+
+
+
+@media print
+{
+  .nav_menu_frame {display:none;}
+  header {display:none;}
+  .action{display:none;}
+  .notification_wrapper{display:none;}
+  .sales_complete{display:none;}
+  .page-container{font-size:14px !important;}
+  body{background:#FFF !important;}
+  .todays_gold_rate_corner{display:none;}
+}
+
+.amt_hover_data
+{
+	display:none;position:absolute; background:#FFF; border:5px solid #07396e;
+	border-radius:10px;    margin-top: -65px; color:#000;
+	margin-left: 52px;
+	padding: 10px; font-size:14px !important; font-weight:normal !important;
+}
+
+.amt:hover
+{
+	.amt_hover_data{display:none; }
+}
+
+

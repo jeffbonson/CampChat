@@ -1,0 +1,53 @@
+.business_entity_info
+{
+	float:left; width:100%; overflow:hidden;
+	
+	.information_wrapper
+	{
+		float:left; width:100%;background:#D7E7F3;
+		
+		.profile_wrapper
+		{
+			float:left;  background:#1E2229; 
+			
+			.business_entity_logo_wrapper
+			{
+				float:left;width:100%; margin:20px 0 20px 0;
+				display: flex;
+			  	align-items: center;
+			  	justify-content: center; 
+				
+				img{width:100px;height:100px;  }
+				
+				span
+				{
+					width:100px;height:100px; background:#FFF; border-radius:50%;
+					align-self: flex-start; display: flex;
+			  		align-items: center; cursor:pointer;
+			  		justify-content: center;
+			  		
+			  		&:hover{font-size:20px;color:#0E3962;}
+			  	}
+				
+			}/*business_entity_logo_wrapper*/
+			
+			.address_wrapper
+			{
+				float:left;width:90%;margin-left:5%; color:#FFF; font-size:12px;
+				
+			}/*address_wrapper*/
+				
+		}/*profile_wrapper*/
+		
+		.notes_wrapper
+		{
+			float:right;background:#D7E7F3;
+			
+		}/*notes_wrapper*/
+			
+	}
+	
+	
+}/*business_entity_info*/
+
+

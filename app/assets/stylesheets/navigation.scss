@@ -1,0 +1,75 @@
+@import 'components/attributes';
+
+.nav_menu_frame
+{
+	height:100%; position:fixed; transition: all 0.2s; z-index: 100;
+	
+	
+	
+	.nav_frame
+	{
+		float:left; width:100%;  background: $nav-menu-background;
+		
+		.logo_container
+		{
+			background:$nav-menu-background; color:#FFF; border-bottom:1px solid gray;
+			
+			div
+			{
+				margin-left:10px;font-weight:bold; font-size:20px;
+				
+				.leftArrow
+				{
+					float:right;cursor:pointer;color:#7B8897;  transition: all 0.2s;
+					padding:10px;margin-top:-10px;
+				}
+			}
+			
+			&:hover{div .leftArrow{margin-right:-5px;} }
+			
+		}/*logo_container*/
+	
+		.nav_items
+		{
+			@include fl-wh; overflow:hidden; overflow-y:auto;
+			
+			.nav_item
+			{
+				float:left;width:96%;
+				
+				padding:15px 0 15px 10px;
+				
+				a
+				{
+					color:$nav-link; cursor:pointer; font-weight:bold;
+				
+					&:hover{color:$nav-link-hover; }
+					
+					.nav_logo{font-size:$nav-link-logo-size; margin-right:10px;}
+					
+				}/*a*/
+			}/*nav_item*/
+		
+			.nav_item_active
+			{
+				a{color:$nav-item-link-active;}
+			}
+		}
+	}/*nav_items*/
+}/*nav_menu_frame*/
+
+.nav_page_frame_slider .cal{display:none;}
+
+header
+{
+	.nav_menu_button_frame
+	{
+		margin-left : 10px; font-size : $nav-link-size; border-right: 1px solid $nav-border;
+		float:left; cursor: pointer;
+	}
+	.nav_menu_logo_frame
+	{
+		margin-left : 10px; font-size : $nav-link-size;
+		float:left; cursor:pointer;
+	}
+}

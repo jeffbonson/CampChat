@@ -1,0 +1,19 @@
+table.tax_transaction_table
+{
+	width:100%; border-collapse:collapse; margin-top:10px;
+	
+	tr th{border:1px solid lightgray;background:#FFF;padding:10px; background:#103265; color:#FFF; font-size:14px;}
+	
+	tr td
+	{
+		border:1px solid lightgray;background:#FFF;padding:10px;
+		
+		
+	}
+	
+	tr td.icon{text-align:center;}
+	
+	
+	
+	
+}

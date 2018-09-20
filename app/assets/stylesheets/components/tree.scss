@@ -1,0 +1,107 @@
+// Simple style for the content of parent & child
+
+
+
+$tree-background : #F0E5E2;
+$bottom-margin : 50px;
+$line-width : 2px;
+$line-color : #FFF;
+
+.parent_item_available
+{
+	float:left;width:100%;text-align:center; padding:10px 0 15px 0; font-size:35px; color:#002B4C;
+	
+	a{color:#002B4C;font-size:35px; }
+}
+.tree-basic-style{float:left;width:100%;background:#F0E5E2;padding:20px 0 20px 0;
+transition: all 0.2s;
+  box-shadow: 1px 1px 5px lightgrey;
+  margin-top:10px;
+  border-radius: 4px;
+  border:1px solid lightgray;
+  }
+  
+.simple-card{
+  margin: 0;
+  background-color: #fff;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(#CC8367, 0.22);
+  
+  
+  &:hover{font-weight:bold;}
+}
+
+
+
+.noChild{
+    margin-top: -50px;
+    height: 25px;
+    z-index: 100;
+    background: #F0E5E2;}
+
+.hv-container ,.hv-wrapper{float:left;width:100%;}
+
+.hv-item{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    .hv-item-parent{
+      margin-bottom: $bottom-margin;
+      position: relative;
+      display: flex;
+      justify-content: center;      
+      &:after{
+        position: absolute;
+        content: '';
+        width: $line-width;
+        height: $bottom-margin / 2;
+        bottom: 0;
+        left: 50%;
+        background-color: $line-color;
+        transform: translateY(100%);
+      }
+    }
+  .hv-item-children{
+    display: flex;
+    justify-content: center;
+    .hv-item-child{
+      padding: 0 15px;
+      position: relative;
+
+      &:before, &:after{
+        content: '';
+        position: absolute;
+        background-color: $line-color;
+        left: 0;
+      }
+
+      &:before{
+        left: 50%;
+        top: 0;
+        transform: translateY(-100%);
+        width: $line-width;
+        height: $bottom-margin / 2;
+
+      }
+
+      &:after{
+        top: -$bottom-margin / 2;
+        transform: translateY(-100%);
+        height: $line-width;
+        width: 100%;
+      }
+
+      &:first-child:after{
+        left: 50%;
+        width: 50%;
+      }
+
+      &:last-child:after{
+        width: calc(50% + 1px);
+      }        
+
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@import 'components/fonts';
+@import 'components/attributes';
+
+
+.list-autocomplete-items{float:left;width:100%;}
+
+.auto_complete
+{
+	display:none;
+	
+	border-radius:4px;
+	z-index: 1000;
+	margin-bottom:20px;
+   /* max-width: 460px;*/
+    border: 1px solid #c6cbcd;
+	animation: panel-slide-down .1s ease-in-out forwards;
+	background-color: $w;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    font-family:inherit;
+    overflow:hidden;
+    
+    .row
+    {
+    	float:left; width:96%;
+    }
+    
+    .input
+    {
+       overflow:hidden;
+       float: left;
+	   width: 96%;
+	   border-radius: 4px;
+	   margin: 2%;
+       
+       .search_lens{float:left; color:$place-holder-color;padding:10px 5px 10px 10px; width:7%;}
+       	
+       	.textbox
+       	{
+       		float:left;width:83%;
+	       	
+			input[type="text"]
+	    	{
+	    		width:95% !important; border:0px !important; height:40px; padding:0px !important;
+		    	outline: none;
+		    	box-shadow: 0; font-size:16px;
+	    		
+	    		&:focus
+			    {
+			    	border:none !important;
+			    	outline: none  !important;
+			    	box-shadow: none !important ;
+			   	}
+		   	}
+		}/*textbox*/
+	   	
+       
+    }/*input*/
+    
+    .set-focus
+    {
+    	border:1px solid $submit-bg;
+    	outline: none;
+    	box-shadow: 0 0 3px #02BDDA;
+   	}
+    
+    .results
+    {
+    	@include fl-wh; overflow:hidden; text-align:left;
+    	max-height:270px; overflow-y:auto;
+    	
+    	.row
+    	{
+    		float:left; width:98%; padding:10px; cursor:pointer;
+    		
+    		.name{@include fl-wh; font-weight:bold;padding:5px 0 0 0; color:$b;cursor:pointer;}
+    		.contact{@include fl-wh;padding:2px 0 5px 0; color:$place-holder-color;cursor:pointer;}
+    		
+    		&:hover
+    		{
+    			background : $submit-bg;
+    			
+    			.name{color : $w;}
+    			.contact{color:$w;}
+    		}
+    		
+    		
+    	}/*row*/
+    	
+    	.new_business-contact-row
+    		{
+    			text-align:center; float:left; width:96%; padding:10px; cursor:pointer; display:none;
+    			
+    			&:hover
+	    		{
+	    			background : $submit-bg;
+	    			color :$w !important;
+	    			
+	    		}
+	    	}/*new_customer*/
+    	
+    }/*results*/
+    
+}/*auto-complete*/

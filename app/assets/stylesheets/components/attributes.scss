@@ -1,0 +1,218 @@
+@import 'components/fonts';
+@import 'components/color';
+
+$nav-menu-width-very-small-desktop : 70%;
+$nav_page_frame_slider-very-small-desktop : 30%;
+
+$nav-menu-width-small-desktop : 30%;
+$nav_page_frame_slider-small-desktop : 70%;
+
+$nav-menu-width-ordinary-desktop : 30%;
+$nav_page_frame_slider-ordinary-desktop : 70%;
+
+$nav-menu-width-large-desktop : 25%;
+$nav_page_frame_slider-large-desktop : 75%;
+
+$nav-menu-width-smartphone-p : 75%;
+$nav_page_frame_slider-smartphone-p : 25%;
+
+$nav-menu-width-smartphone-l : 60%;
+$nav_page_frame_slider-smartphone-l : 40%;
+
+$nav-menu-width-ipad-p : 60%;
+$nav_page_frame_slider-ipad-p : 40%;
+
+$nav-menu-width-ipad-l : 60%;
+$nav_page_frame_slider-ipad-l : 40%;
+
+
+
+@mixin fl-wh
+{
+	float:left; width: 100%;
+}
+
+@mixin input-focus
+{
+	border:1px solid $submit-bg;
+	outline: none;
+	box-shadow: 0 0 3px #02BDDA;
+	box-shadow: 0 0 0 2px rgba(0,126,158,0.3);
+}
+
+@mixin tb
+{
+	float:left; width:95%;
+	border: 1px solid #a2b6c3 !important;
+    border-radius: 4px;
+    cursor: text;
+    padding: 13px 10px;
+    transition: border .1s linear;
+    -webkit-appearance: none;
+    font-family:inherit;
+    font-size :$tb;
+    
+    &:focus
+    {
+    	@include input-focus;
+   	}
+}
+
+@mixin button-attribtes
+{
+	min-width: auto;
+	border:1px solid $submit-bg;
+    border-radius: 4px;
+    cursor: text;
+    padding: 11px 10px;
+    transition: border .1s linear;
+    font-size: $tb;
+    background : $submit-bg;
+    color : #FFF;
+    text-align:center;
+    outline:0;
+    padding : 12px 18px;
+    font-weight:bold; cursor:pointer;
+    
+    &:hover{ background : $submit-bg-hover;}
+}
+
+@mixin button
+{
+	float:right; 
+	
+	@include button-attribtes;
+}
+
+
+@mixin cancel-button-attributes
+{
+	
+	border:1px solid $cancel-border-color;
+    border-radius: 4px;
+    cursor: text;
+    padding: 11px 10px;
+    transition: border .1s linear;
+    font-size: $tb;
+    color :$cancel-color;
+    background : $w;
+    text-align:center;
+    outline:0;
+    padding : 12px 30px 12px 30px;
+    font-weight:bold; cursor:pointer;
+    margin-right:10px;
+    
+    &:hover{ color : $b; border:1px solid $cancel-color;}
+}
+
+
+@mixin cancel-button
+{
+	float:left; width: 100%;
+	@include cancel-button-attributes;
+}
+
+
+@mixin  placeholder-attrib($fontsize){
+	color: $place-holder-color;font-style:italic; font-size:$fontsize;
+	
+}
+
+@mixin placeholder($fontsize) 
+{	 
+	
+
+	::-webkit-input-placeholder 
+	{ /* Chrome/Opera/Safari */
+		@include  placeholder-attrib($fontsize);
+	}
+	
+	::-moz-placeholder 
+	{ /* Firefox 19+ */
+	  	@include  placeholder-attrib($fontsize);
+	}
+	
+	:-ms-input-placeholder 
+	{ /* IE 10+ */
+	  	@include  placeholder-attrib($fontsize);
+	}
+	
+	:-moz-placeholder 
+	{ /* Firefox 18- */
+	  	@include  placeholder-attrib($fontsize);
+	}
+}
+
+
+@mixin input-text-field($font)
+{
+	@include tb;
+	color: $place-holder-color;
+	font-style:italic;
+	font-style:16px;
+	background:$w;
+	margin-bottom:10px;
+	font-size : $font;
+}
+
+@mixin input_select_field-tb($font)
+{
+	float:left; width:95%;
+	border: 1px solid #a2b6c3 !important;
+    border-radius: 4px;
+    cursor: text;
+    padding: 13px 10px;
+    transition: border .1s linear;
+    -webkit-appearance: none;
+    font-family:inherit;
+    font-size :$font;
+    
+    &:focus
+    {
+    	@include input-focus;
+   	}
+}
+
+@mixin input-select-field($font)
+{
+	text-align:left;
+	
+	color: $place-holder-color;
+	font-style:italic;
+	background:$w;
+	cursor:pointer;
+	margin-bottom:10px;
+	font-size : $font;
+	cursor:pointer !important;
+	@include input_select_field-tb($font);
+	
+   	
+}
+
+@mixin input-select-field-selected($font)
+{
+	
+	@include input_select_field-tb($font);
+	color: $b;
+	font-style:normal;
+	background:$w;
+	cursor:pointer;
+	margin-bottom:10px;
+	font-size : $font;
+	cursor:pointer !important;
+}
+
+
+@mixin input-date-range-field($font)
+{
+	@include tb;
+	color: $place-holder-color;
+	font-style:italic;
+	background:$w;
+	cursor:pointer;
+	margin-bottom:10px;
+	
+	
+	
+	
+}

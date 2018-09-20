@@ -1,0 +1,56 @@
+.gold_asset_value
+{
+	float:left; width:100%;    overflow: hidden;
+	
+}
+
+
+.main_amount_table
+{
+	width:100%;
+	
+	.left{background:#000; color:#fff; font-weight:bold; width:60%; height:50px; padding-left:10px;}
+	
+	.center{background:#000;
+		
+	}
+	
+	.right{background:red; color:#fff; font-weight:bold;width:35%;text-align:right; padding-right:8px;height:50px;}
+}
+
+.triangle {
+    border-color: red red red black;
+    border-style: solid;
+    border-width: 25px 25px 25px 25px;
+    height: 0px;
+    width: 0px;
+}
+
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+	border: 0px solid #c2e1f5;
+}
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	
+	border-left-color: #000;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.arrow_box:before {
+	
+	border-left-color: #FFF;
+	border-width: 36px;
+	margin-top: -36px;
+}

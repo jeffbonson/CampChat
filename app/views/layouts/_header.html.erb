@@ -1,0 +1,16 @@
+<div class="nav_menu_button_frame">
+	<span class="fa fa-bars"></span>
+</div>
+
+<div class="nav_menu_logo_frame">
+	
+	CampChat
+	<%# if user_signed_in? %>
+	  <%#= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> 
+	  <%#= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+	<%# else %>
+	  <%#= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> 
+	  <%#= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+	<%# end %>
+	
+</div>

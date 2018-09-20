@@ -1,0 +1,24 @@
+<%if @messages.blank?%>
+	<div>No chats Found</div>
+<%else%>
+	<%@messages.each do |m|%>
+	<div class="message">
+		
+		<%if current_user["id"].to_i == m.from.to_i%>
+			<%@class = "right_align"%>
+			
+		<%else%>
+			<%@class = "left_align"%>
+		<%end%>
+		
+		<div class="message_row_wrapper">
+			<div class="message_row <%=@class%>">
+				<div class="content"><%=m.content%></div>
+				<div class="duration"><%=m.created_at%> by <%=m.from%></div>
+			</div>
+		</div>
+		
+		
+	 </div>
+	<%end%>
+<%end%>

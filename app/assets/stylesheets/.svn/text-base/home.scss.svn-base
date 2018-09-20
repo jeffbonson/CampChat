@@ -1,0 +1,18 @@
+
+@import 'components/attributes';
+
+
+.homePageContainer
+{
+	header
+	{
+		float: left;
+		@include fl-wh;
+		
+	}/*header*/
+	
+	
+	
+}/*homePageContainer*/
+
+.usersPageContent{@include fl-wh;}

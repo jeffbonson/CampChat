@@ -1,0 +1,50 @@
+@import 'components/attributes';
+
+
+.fullPageSingleContainer
+	{
+		float:left;
+		/*margin : 30px 0 0 35%;
+		width: 30%; */
+		min-height: 300px;
+		
+		.homeLogoTitle
+		{
+			@include fl-wh;
+			padding : 20px 0 20px 0;
+			text-align : center; font-weight:bold;
+			font-size: 33px;
+		    line-height: 40px;
+		    font-weight: bold;
+		}
+		
+		
+		.containerTitle
+		{
+			@include fl-wh;
+			text-align : center;
+			padding : 20px 0 20px 0;
+			font-size: 33px;
+		    line-height: 40px;
+		    
+			
+			
+		}/*containerTitle*/
+		
+		
+		.containerOuter
+		{
+			@include fl-wh;
+			width:100%;
+			margin : 2% 0 0% 0;
+			height:300px;
+			
+			
+			
+		}/*containerOuter*/
+		
+		
+	}/*login_container*/
+	
+
+	

@@ -1,0 +1,71 @@
+.risk_meter {position: relative; cursor:pointer;}
+
+$high : #ED454E;
+$medium : #FF8931;
+$low : #7EAC6C;
+
+.risk_meter::before,
+.risk_meter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.high{color:$high !important;}
+.medium{color:$medium !important;}
+.low{color:$low !important;}
+
+.risk_meter::before {
+    border-width: 1.5em;
+    border-left-color: #ccc;
+    border-top-color: #ccc;
+}
+
+.high::after {
+    border-width: 1.35em;
+    border-left-color: $high;
+    border-top-color: $high;
+}
+
+.medium::after {
+    border-width: 1.35em;
+    border-left-color: $medium;
+    border-top-color: $medium;
+}
+
+.low::after {
+    border-width: 1.35em;
+    border-left-color: $low;
+    border-top-color: $low;
+}
+
+.riskMeterTable{width:90%;margin-left:5%;}
+
+.riskMeterTable tr td{text-align:center;}
+
+.riskMeterTable tr td .active{span.selectioncheck{display:block !important;color:#FFF;} }
+
+.riskMeterBall
+	{	width:80px;height:80px;background:gray;
+		border-radius:50%;margin: 0 auto;cursor:pointer;
+		
+		span.selectioncheck
+		{
+			margin-top:25px;float:left;width:100%;display:none;font-size:30px;
+		}
+		
+		&:hover
+		{
+			span.selectioncheck{display:block;color:lightgray;}
+		}
+	}
+.riskMeterTable tr td span.label{margin-top:15px;float:left;width:100%;}
+
+.highBall{background:$high;}
+.mediumBall{background:$medium;}
+.lowBall{background:$low;}
+
+.change_risk_again{cursor:pointer;}

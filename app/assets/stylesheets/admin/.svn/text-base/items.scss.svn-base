@@ -1,0 +1,128 @@
+.split_itemCard
+{
+	background: #cee8f1;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #a2b6c3;
+	width:92%; margin-top:10px; cursor:pointer;
+	
+	table
+	{
+		width:100%; font-size:14px;
+		tr td{color:#000;}
+		tr td.splitItemAmtStatus
+		{
+			text-align:center;padding-top:10px;
+			
+		}
+		tr td.splitItemName
+		{
+			text-align:left;font-weight:bold;
+			
+		}
+		
+		tr td .partial_stock 
+		{
+			    margin-top: -11px;float: left;width: 100%;
+			.statMeter{padding:5px 0 5px 0}	
+		}
+		
+	}
+}
+.itemCard
+{
+	float:left;width:98%; margin:0 1% 10px 1%; background:#FFF;height:270px; border:1px solid lightgray; border-radius:10px;
+	overflow:hidden;color:#000;
+	
+	
+	
+	.itemPhoto
+	{
+		float:left; width:100%; text-align:center;height:180px;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+		
+		img
+		{    
+			max-width: 100%;
+    		max-height: 100%;
+    	}
+	}
+	
+	.itemName{float:left; width:100%; text-align:center; font-size:13px; padding:10px 0 10px 0;}
+	
+	.itemPrice{float:left; width:100%; text-align:center; padding:10px 0 10px 0;}
+}
+
+
+.default_item_photo{width:80px;}
+
+.calcluator
+{
+	width:100%;border-collapse:collapse;
+	
+	tr td{width:50%; border:1px solid gray; background:#FFF; padding:10px;}
+}
+
+.variable_item_selector_wrapper
+{
+	float:left;width:90%; margin-left:5%;
+	
+	.selectorWrap{float:left;
+     padding-top: 10px;}
+	.labelWrap{float:left;}
+	.labelInputWrap{padding-top: 15px;padding-right: 15px;}
+	.textWrap{float:left;}
+}
+
+.variable_weight_row
+{
+	float:left; width:90%; margin-left:5%;
+	
+	.title{float:left;width:100%; padding:5px 0 5px 0;}
+	
+	.newItem{float:left;width:100%; }
+	
+	.newCardDetails
+	{
+		float:left;width:100%; 
+		
+		table{width:100%;margin-top:10px;font-size:14px;
+			tr td{padding:5px;width:50%;}
+		}
+	}
+}
+
+.splitPartialItem
+{
+    background: #cee8f1;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #a2b6c3;
+	
+}
+
+
+
+.original_varialble_item
+{
+	float: left;
+   
+    margin-left: 5%;
+    background: #cee8f1;
+	border: 1px solid #a2b6c3;
+	border-radius: 3px;
+    padding: 10px;
+	
+	.itemName{float:left; width:100%;padding:5px 0 5px 0;}
+	
+	.itemDetails
+	{
+		float:left; width:100%;
+		
+		table{border-collapse:collapse;width:100%;
+			tr td{padding: 5px;width: 50%;    font-size: 14px;}
+		}
+	}
+}

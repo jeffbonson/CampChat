@@ -1,0 +1,7 @@
+#gold_rate_bar_graph{float:left;width:100%;display:none;    margin-top: -100px;transition: all 0.2s;}
+
+.graphIcon{float:right;margin-right:20px;transition: all 0.2s;
+			img{width:40px;height:40px;cursor:pointer;}
+		}
+		
+.highcharts-credits{display:none;}

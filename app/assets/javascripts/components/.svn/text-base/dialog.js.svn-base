@@ -1,0 +1,35 @@
+
+
+
+
+function open_dialog(page)
+{
+	$(".dialog_box").html(page);
+	$(".mask_page").addClass("is_active");
+	$(".dialog_box").addClass("is_open");
+	jQuery('html,body').animate({scrollTop:0},500);
+	
+}
+
+function close_dialog()
+{
+	$(".dialog_box").html('');
+	$(".mask_page").removeClass("is_active");
+	$(".dialog_box").removeClass("is_open");
+}
+
+
+$(document).on('click', '.close-dialog', function()
+{
+	close_dialog();
+});
+
+$(document).on('click', '.mask_page', function()
+{
+	close_dialog();
+});
+
+$(document).on('click', '.footer-box .cancel', function()
+{
+	close_dialog();
+});

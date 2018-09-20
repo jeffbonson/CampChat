@@ -1,0 +1,120 @@
+@import 'components/attributes';
+@import 'components/fonts';
+@import 'components/color';
+
+.page-outer
+{
+	float:left; transition: all 0.2s;
+	
+	.page-header
+	{
+		@include fl-wh; transition: all 0.2s;
+		
+		.title
+		{
+			float:left;transition: all 0.2s;
+		}
+		
+		.action
+		{
+			float:right;transition: all 0.2s;
+			
+			.button-1{float:right;}
+			
+			
+		}
+	}/*page-header*/
+	
+	
+	.page-form-action{margin-top:20px;}
+	
+	.page-filled{background : $w; border:1px solid lightgray;}
+	
+	.page-container
+	{
+		@include fl-wh;
+		border-radius: 4px; 
+		transition: all 0.2s;
+		
+		
+		
+		
+		.page-form
+		{
+			@include fl-wh;
+			
+			.page-form-inner{padding:20px; width: 90%;}
+			
+			.page-filter
+				{
+				    
+				.item
+				{
+					 cursor:pointer;
+					 
+					
+					
+				   .date-range-container
+			    	{
+			    		float:left; border: 1px solid #a2b6c3 !important;
+			    		
+						border-radius: 4px; background : $w;
+						
+			    		.date-range
+			    		{
+			    			float:left;width:49.5%; overflow:hidden;
+			    			
+			    			input{width: 86%; border: 0 !important;}
+			    			
+			    			.cal{color: $place-holder-color; float:right;     margin-right: 5px; margin-top: -30px;}
+			    		}
+			    		
+			    		.date-range-border{border-right: 1px solid #a2b6c3;}
+			    	}
+				   &:last-child{padding-right:0;margin-top:10px;}
+				}/*item*/
+				
+				 
+				
+				}/*page-filter*/
+				
+				.input-select-field .select-icon{float:right;}
+				.selected_ddlb{color:#000 !important; font-style:normal !important;}
+			
+			.blocks
+			{
+				@include fl-wh; 
+				
+				.panel-left
+				{
+					float:left;
+				}
+				.panel-right
+				{
+					float:right;
+				}
+				
+				
+				
+				/* used in responsive desktop css
+				.box1{width:100%;}
+				.box2{width:50%;}
+				.box3{width:33.33%;}
+				.box3_fill{width:66.66%;}
+				.box4{width:25%;}
+				.box4_fill{width:75%;}
+				.box5{width:45%;}
+				.box5_fill{width:55%;}
+				*/
+				
+				
+				
+			}
+		}/*page-form*/
+		
+		
+		
+	}/*page-container*/
+	
+	
+}/*page-outer*/

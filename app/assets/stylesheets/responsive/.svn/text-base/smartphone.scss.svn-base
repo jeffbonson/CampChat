@@ -1,0 +1,498 @@
+@import 'components/attributes';
+
+@mixin smartphone-portrait
+{
+	@include placeholder($placeholder-smartphone);
+	
+	button{width: 100%; margin-bottom:10px;}
+	input[type="submit"]{width: 100%;}
+    
+	.nav_menu_frame
+	{
+		display:block;  width: $nav-menu-width-smartphone-p; margin-left : -$nav-menu-width-smartphone-p;
+		.logo_container{padding:18px 0 18px 0;}
+		
+		.nav_frame
+		{
+			.nav_items{ overflow-y: hidden; height: 100%; }
+	    }
+	}
+	
+	
+	
+	.nav_page_frame
+	{	
+		width:100%; 
+	
+		.page_frame header
+		{
+			display:block;
+			.nav_menu_button_frame{font-size:$nav-link-size-smartphone-portrait;padding: 22px}
+			.nav_menu_logo_frame{font-size:$nav-link-size-smartphone-portrait;padding:  22px}
+		}
+	}
+	
+	.nav_page_frame_slider{width: $nav_page_frame_slider-smartphone-p;}
+	
+	
+	input[type="submit"]{padding : 20px 30px 20px 30px;}
+	
+	.usersPageContent 
+	{
+		.fullPageSingleContainer
+		{
+			width:98%; margin-left:1%;
+			.homeLogoTitle{font-size: 25px;line-height: 30px;}
+			.containerTitle{padding : 20px 0 20px 0; font-size: 20px;line-height: 20px;}
+		}
+	}/*usersPageContent*/
+	
+	.page-outer
+	{
+		width:96%; margin:10px 0 0 2%;
+		
+		.page-header
+		{
+			margin-bottom:10px;
+			
+			.title{width:100%;font-size: $page-header-title-smartphone-p;  text-align:center; padding-top: 10px;}
+			.action
+			{
+				width:100%; font-size: $page-header-title-smartphone-p;
+				.button-1{ width:100%;}
+				
+			}
+		}/*.page-header*/
+		
+		.page-container
+		{
+			margin-top:10px; 
+			
+			.page-form
+				{
+					.blocks
+					{
+						margin-bottom:10px;
+						
+						.box1{width:100%;}
+						.box2{width:100%;}
+						.box3{width:100%;}
+						.box3_fill{width:100%;}
+						.box4{width:100%;}
+						.box4_fill{width:100%;}
+						.box5{width:100%;}
+						.box5_fill{width:100%;}
+						
+					}/*.blocks*/
+				}/*.page-form*/
+			
+		}/*page-container*/
+		
+	}/*page-outer*/
+	
+	.transaction_form 
+	{
+		.business-contact-segment
+		{
+			.add-business-contact
+			{
+				width:93%; padding-top: 5px;
+				margin: 2%;font-size:16px;
+			}
+		}/*business-contact-segment*/
+		
+		#invoise-segment .meta-info 
+		{
+			width:93%;margin-top:3%; margin-left:2%;
+			.meta-row .meta-row-label {text-align:left;}
+		}
+	}/*transaction_form */
+	
+	.form-app
+	{
+		.label-half{ width: 97%;text-align:left !important;    padding: 3px; margin-left: 5%;}
+		.input-half{ width: 85%; margin-left:5%;
+			input[type="text"]{width:91%;font-size:16px;}
+		}
+		
+		.panel-head
+		{
+			.icon
+			{
+				width: 100%;
+				span{width:100%; text-align:center; margin:0; border:0; border-bottom:1px solid lightgray; margin-top: -10px;padding: 10px;font-size: 16px;font-weight:bold;}
+			}
+			.panel-head-data{width:93%; padding:10px;}
+			.panel-head-action{width: 100%;
+				a{float:left;margin-left:38%;}
+			}
+			
+		}/*panel-head*/
+	}/*form-app*/
+	
+	.list-form-scroller{width:100%; overflow-x:auto;}
+	.list-form{width:305%;}
+	
+	.inline-form
+	{
+		.inline-form-row
+		{
+			.label{width:100%;padding-top:13px;}	
+			.input{width:90%;}
+			.submit{width:91%; margin-top:10px;}
+		}/*inline-form-row*/
+	}/*inline-form*/
+
+	.add_item_form_wrapper
+	{
+		height:65px;
+		
+		.add_item_form{ padding:20px 0 20px 5%; position:absolute; width:91%;}
+	}/*add_item_form_wrapper*/
+	
+	.page-filter
+	{
+		float:left; width: 103%;
+		
+		.item
+		{
+			 float:left; width: 96%; margin-bottom:10px;
+			 
+			 .date-range-container{width:100%;}
+			 .date-range-container .date-range input{padding:12.5px 10px; font-size: $placeholder-smartphone;}
+		}
+		 
+	}/*page-filter*/
+	
+	.input-text-field{@include input-text-field($placeholder-smartphone);}
+	.input-select-field{@include input_select_field-tb($placeholder-smartphone);}
+	
+	.auto_complete{float:left;}
+	
+	.admin-pannel-item{width: 99.5% !important;}
+	
+	.item_card
+	{
+		.inventory{width:100%;padding:10px 0 10px 0; }
+		
+		.item_details
+		{
+			float:right; width:100%;
+			
+			.item_description
+			{
+				 padding:10px;font-size:12px;
+			}
+			
+			.item_transactions .itrans
+			{   
+				width: 85%;
+			    margin-left: 3%;
+			    background: lightblue;
+			    margin-bottom: 10px;
+			    border-radius: 5px;
+			    padding:15px;
+				line-height: 25px;
+			}
+			
+			.rgtbdr{border-right:1px solid lightgray;}
+		}
+		
+		.item_status{float:right; width:100%;padding:10px 0 10px 0; margin-top:10px;}
+	}
+	
+	.preview_action_wrapper
+	{
+		.send_email_wrapper{width:100%;
+		
+			.send_email_input_wrapper
+			{
+				width:75%;
+				input{width:88%;}
+			}
+			
+			.send_email_submit_wrapper input{padding:13px 20px;}
+		
+		}
+		.download_pdf_wrapper
+		{
+			width:100%;margin-top:20px;
+			button{width:100%;}
+		}
+			
+	}
+	
+	.business_entity_info
+	{
+		.information_wrapper
+		{
+			.profile_wrapper
+			{
+				width:100%;max-height:340px;
+			}/*profile_wrapper*/
+			
+			.notes_wrapper
+			{
+				max-height:400px;width:98%; margin-left:2%;
+			}/*.notes_wrapper*/
+			
+		}/*.information_wrapper*/
+		
+	}/*business_entity_info*/
+	
+	.splitPartialItem{width: 87%;margin-top: 10px;}
+	.original_varialble_item{ width: 87%;}
+	
+}
+/*****************************************************************************************************************/
+@mixin smartphone-landscape
+{
+	@include placeholder(14px);
+	
+	button{width: 100%; margin-bottom:10px;}
+	input[type="submit"]{width: 100%;}
+	
+	.nav_menu_frame
+	{
+		display:block; width:$nav-menu-width-smartphone-l; margin-left : -$nav-menu-width-smartphone-l;
+		.logo_container{padding:18px 0 18px 0;}
+		
+		.nav_frame
+		{
+			
+			.nav_items{ overflow-y: auto; height: 200px; }
+	    }
+	}
+	
+	.nav_page_frame
+	{	
+		width:100%;
+		
+		.page_frame header
+		{
+			display:block;
+			.nav_menu_button_frame{font-size:$nav-link-size-smartphone-landscape;padding: 21px;}
+			.nav_menu_logo_frame{font-size:$nav-link-size-smartphone-landscape;padding: 21px;}
+		}
+	}
+	
+	.nav_page_frame_slider{width: $nav_page_frame_slider-smartphone-l;}
+	
+	.usersPageContent 
+	{
+	
+	.fullPageSingleContainer 
+		{
+			width:60%; margin-left:20%;margin-top:0;
+			.homeLogoTitle{font-size: 25px;line-height: 30px;}
+			.containerTitle{padding : 5px 0 5px 0; font-size: 20px;line-height: 20px;}
+		}
+	}/*usersPageContent*/
+	
+	.page-outer
+	{
+		width:96%; margin:15px 0 0 2%;
+		
+		.page-header
+		{
+			margin-bottom:10px; 
+			
+			.title{width:45%;font-size: $page-header-title-smartphone-p;    margin-top: 10px;}
+			.action
+			{
+				width:55%; font-size: $page-header-title-smartphone-p;
+				.button-1{ width:50%;}
+				
+			}
+		}/*.page-header*/
+		
+		.page-container
+		{
+			margin-top:10px; 
+			
+			.page-form
+				{
+					.blocks
+					{
+						margin-bottom:10px;
+						
+						.box1{width:100%;}
+						.box2{width:50%;}
+						.box3{width:33.33%;}
+						.box3_fill{width:66.66%;}
+						.box4{width:25%;}
+						.box4_fill{width:75%;}
+						.box5{width:45%;}
+						.box5_fill{width:55%;}
+						
+					}/*.blocks*/
+				}/*.page-form*/
+			
+		}/*page-container*/
+		
+	}/*page-outer*/
+	
+	.transaction_form 
+	{
+		.business-contact-segment
+		{
+			.add-business-contact
+			{
+				width:85%; padding-top: 5px;
+				margin: 5%;font-size:16px;
+			}
+		}/*business-contact-segment*/
+		
+		#invoise-segment .meta-info 
+		{
+			width:95%;margin-top:3%;
+			.meta-row .meta-row-label {text-align:right;}
+		}
+	}/*transaction_form */
+	
+	.form-app
+	{
+		.label-half{ width: 97%;text-align:left !important;    padding: 3px; margin-left: 5%;}
+		.input-half{ width: 85%; margin-left:5%;
+			input[type="text"]{width:91%;font-size:16px;}
+		}
+		
+		.panel-head
+		{
+			.icon
+			{
+				width: 20%;
+				span{margin: 10px;padding: 20px;font-size: 30px;}
+			}
+			.panel-head-data{width:51%;padding-bottom: 10px;}
+			.panel-head-action{width: 15%;}
+			
+		}/*panel-head*/
+		
+	}/*form-app*/
+	
+	.list-form-scroller{width:100%; overflow-x:auto;}
+	.list-form{width:150%;}
+	
+	.inline-form
+	{
+		.inline-form-row
+		{
+			.label{width:30%;padding-top:13px;}	
+			.input{width:30%;}
+			.submit{width:20%;}
+		}/*inline-form-row*/
+	}/*inline-form*/
+	
+	.page-filter
+	{
+		display: table; width: 99%;table-layout: fixed;
+		
+		.item
+		{
+			 display: table-cell; vertical-align: -webkit-baseline-middle; padding-right:10px;
+			 
+			 .date-range-container{width:100%;}
+			 .date-range-container .date-range input{padding:13.5px 10px; font-size: $placeholder-smartphone;}
+		}
+		
+		.status_filter{width: 100px; padding-right:16px;}
+		 
+	}/*page-filter*/
+	
+	.input-text-field{@include input-text-field($placeholder-smartphone);}
+	.input-select-field{@include input-text-field($placeholder-smartphone);}
+	.input-select-field-selected{@include input-select-field-selected($placeholder-smartphone);}
+	
+	.auto_complete{float:left;}
+	
+	.item_card
+	{
+		.inventory{width:100%;padding:10px 0 10px 0; }
+		
+		.item_details
+		{
+			float:right; width:100%;
+			
+			.item_description
+			{
+				 padding:10px;font-size:12px;
+			}
+			
+			.item_transactions .itrans
+			{   
+				width: 94%;
+			    margin-left: 1%;
+			    background: lightblue;
+			    margin-bottom: 10px;
+			    border-radius: 5px;
+			    padding:15px;
+				line-height: 25px;
+			}
+			
+			.rgtbdr{border-right:1px solid lightgray;}
+		}
+		
+		.item_status{float:right; width:100%;padding:10px 0 10px 0; margin-top:10px; }
+	}
+	
+	.preview_action_wrapper
+	{
+		.send_email_wrapper{width:73%;}
+		
+		.send_email_input_wrapper
+		{
+			width:75%;
+			input{width:92%;}
+		}
+		.download_pdf_wrapper{width:25%;}
+			
+	}
+	
+	.business_entity_info
+	{
+		.information_wrapper
+		{
+			.profile_wrapper
+			{
+				width:100%;max-height:340px;
+			}/*profile_wrapper*/
+			
+			.notes_wrapper
+			{
+				max-height:400px;width:98%; margin-left:2%;
+			}/*.notes_wrapper*/
+			
+		}/*.information_wrapper*/
+		
+	}/*business_entity_info*/
+	
+	.splitPartialItem{width: 87%;margin-top: 10px;}
+	.original_varialble_item{ width: 87%;}
+	
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	/* Styles */
+}
+
+
+
+
+
+
+
+

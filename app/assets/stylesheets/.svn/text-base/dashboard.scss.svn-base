@@ -1,0 +1,82 @@
+@import 'components/color';
+
+.todays_gold_rate_top{
+	float: left;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    background: #448244;
+    color: #FFF;
+    font-size: 11px;
+    padding-left: 10px;
+}
+
+.dashboard
+{
+
+ .blocks
+ {
+ 	
+	.sales_box{background : $sale; width:95%;box-shadow: 1px 1px 1px grey;}
+	.purchases_box{background :$purchase; width:95%;box-shadow: 1px 1px 1px grey;}
+	.orders_box{background :$order; width:95%;box-shadow: 1px 1px 1px grey;}
+	.gold_rate_box{width:95%;box-shadow: 1px 1px 1px grey;}
+	
+ 	
+	
+ 	.box
+ 	{
+ 		color:#FFF; margin-bottom:10px;
+ 		
+ 		.conent
+ 		{
+ 			background: transparent;
+    		padding: 10px 10px 13px;
+    		display: inline-block;
+    		position: relative;
+    		z-index: 5; width:91%;
+    
+    		h1
+    		{
+    			margin: 0;
+    			font-weight: 300;
+    			font-size: 40px;
+    			padding: 8px;
+    		}
+    		
+    		p
+    		{ 
+    			margin-bottom: 0;
+    			padding: 10px;
+    			font-weight: 4 00;
+    			font-size: 14px;
+    			clear: both;
+    		}
+    	}
+    
+ 		.icon
+ 		{
+			
+		    float: right;
+		    height: 80px;
+		    margin-top: -125px;
+		    padding-left: 15px;
+		    padding-top: 10px;
+		    width: 80px;
+		    right: 40px;
+		    bottom: 9px; 	
+		    
+		    span
+	    	{    
+	    		color: rgba(0, 0, 0, 0.05);
+		        font-size: 60px;
+				line-height: 110px;
+			}		
+ 		}
+ 	}
+ 	
+ }
+ 
+ #container_pie .highcharts-title{cursor:pointer;}
+
+	.loader{width:100%;float:left;}	
+}

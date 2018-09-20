@@ -1,0 +1,56 @@
+$pagebg : #f8fafc;
+
+$submit-bg : #029eb6;
+
+$submit-bg-hover : #0194AA;
+
+$nav-menu-background : #103265;
+
+$link : #175fcb; /*#029eb6;*/
+
+$nav-link : #b1c9ec;
+
+$nav-link-hover : #FFF;
+
+$nav-item-link-active : #0dddfd;
+
+$nav-border : #9ca1a2;
+
+$w : #FFF;
+
+$b : #000;
+
+$red : #c22929;
+
+$input-border: #a2b6c3;
+
+$add-customer: #a2b6c3;
+
+$place-holder-color : #A2B6C3;
+
+$selected-customer-title : #687378;
+
+$page-link-color : #029eb6;
+
+$dialog-close : #687378;
+
+$dialog-title :#1c252b;
+
+$cancel-color : #4d6575;
+
+$cancel-border-color : #8aa2b2;
+
+$list-form-bg : $w;
+
+$list-form-item-bg : #ECF0F3;
+
+$add-item-bg-hover-color:#f4f5f5;
+
+$sale:#9a59b5;
+$purchase:#3598db;
+$order:#ffa500;
+
+
+
+
+

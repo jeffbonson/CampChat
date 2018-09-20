@@ -1,0 +1,63 @@
+@import 'components/attributes';
+@import 'responsive/manifest';
+
+.purchasesPageContainer
+{
+	
+	#purchases_form
+	{
+		#purchases-header
+		{
+			#vendor-segment
+			{
+				#add-vendor
+				{
+					float:left; 
+					border-radius:4px;
+					
+					color : $link;
+					
+					cursor:pointer;
+					
+					
+				}
+				
+			}/*vendor-segment*/
+			
+			#invoise-segment
+			{
+				.meta-info
+				{
+					float:left; 
+					
+					.meta-row
+					{
+						@include fl-wh;
+						margin-bottom:15px;
+						
+						.meta-row-label 
+						{
+							float:left; width:50%;
+							font-size: 16px;
+							padding-top: 10px;
+						}
+						
+						.meta-row-content 
+						{
+							float:left; width:45%; margin-left:2%;
+							input[type="text"]
+							{
+								@include tb;
+							}
+							.cal{position:absolute; color:#A2B6C3;font-size:20px;margin-top: 11px; margin-left: -25px;}
+						}
+						
+					}/*meta-row*/
+				}/*meta-info*/
+			}
+		}/*purchases-header*/
+		
+		
+	}/*purchases_form*/
+	
+}/*purchasesPageContainer*/

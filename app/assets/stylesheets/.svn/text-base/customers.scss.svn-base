@@ -1,0 +1,24 @@
+@import 'components/attributes';
+@import 'components/fonts';
+
+.selected-customer
+{
+	float:left; width: 85%; margin:5%;
+	
+	.title{@include fl-wh; margin-bottom:10px; color:$selected-customer-title;}
+	
+	.name{@include fl-wh; font-weight:bold; margin-bottom:10px;}
+	
+	.contact{@include fl-wh;}
+	
+	.actions
+	{
+		@include fl-wh; margin-top:20px;
+		
+		.action{@include fl-wh; margin-top:20px;}
+		
+		span {margin-right:10px; float:left;}
+		
+		
+	}
+}
